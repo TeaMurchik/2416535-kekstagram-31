@@ -21,6 +21,9 @@ function closeFormByKey(evt) {
       return;
     }
     document.body.classList.remove('modal-open');
+    imgUploadPreview.src = '';
+    textHashTags.value = '';
+    textDescription.value = '';
     document.querySelector('.img-upload__overlay').classList.add('hidden');
   }
 }
